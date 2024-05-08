@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_application_1/dice_roller.dart';
 
 void main() {
   runApp(const MainApp());
 }
+
+
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -24,13 +27,13 @@ class MainApp extends StatelessWidget {
               end: Alignment.bottomRight,
               )
           ),
-          child: const Center(
-            child:Image.asset()
-            ) ),
+          child:  Center(
+            child: Diceroller(),
+          
+            )
+            ),
           ),
-        ),
-        
-      ),
-    );
+        );
+     
   }
 }
